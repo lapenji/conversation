@@ -5,8 +5,8 @@ import competenze from '../Lominger/lominger.js'
 const Conversation = ({numeri, nome, ruolo, backHandler}) => {
    
     const divStyle = {
-        maxWidth: '500px',
-        maxHeight: '400px',
+        width: '500px',
+        height: '400px',
         backgroundColor: 'white',
         display: 'flex',
         flexDirection: 'column',
