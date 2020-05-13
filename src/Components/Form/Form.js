@@ -18,8 +18,8 @@ const Form = ({handler}) => {
         }
     }
     const divStyle = {
-        width: '500px',
-        height: '400px',
+        maxWidth: '500px',
+        maxHeight: '400px',
         backgroundColor: 'white',
         display: 'flex',
         flexDirection: 'column',
@@ -29,6 +29,7 @@ const Form = ({handler}) => {
         borderRadius: '10px',
         fontSize: '10px',
         padding: '15px',
+        textAlign: 'center'
         
     }
     const inputStyle = {
@@ -39,8 +40,9 @@ const Form = ({handler}) => {
     return(
         <div style={divStyle}>
             <h1>Insert your data</h1>
-            <div><span>Name:</span><input style={inputStyle} type="text" name="name" value={name} onChange={changeHandler}/><span>Role:</span><input style={inputStyle} type="text" name="ruolo" value={ruolo} onChange={changeHandler}/></div>
-            <button onClick={submitHandler}>GO</button>
+            <div style={{display: 'flex', alignItems:'center'}}><span style={{width: '35px'}}>Name:</span><input style={inputStyle} type="text" name="name" value={name} onChange={changeHandler}/></div>
+            <div style={{display: 'flex', alignItems:'center'}}><span style={{width: '35px'}}>Role:</span><input style={inputStyle} type="text" name="ruolo" value={ruolo} onChange={changeHandler}/></div>
+            <button onClick={submitHandler} style={{marginTop: '10px'}}>GO</button>
 
             
         </div>
