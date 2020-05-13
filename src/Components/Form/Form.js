@@ -29,6 +29,7 @@ const Form = ({handler}) => {
         borderRadius: '10px',
         fontSize: '10px',
         padding: '15px',
+        
     }
     const inputStyle = {
         marginLeft: '5px',
